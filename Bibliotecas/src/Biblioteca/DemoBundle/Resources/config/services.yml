@@ -1,0 +1,7 @@
+parameters:
+#    biblioteca_demo.example.class: Biblioteca\DemoBundle\Example
+
+services:
+#    biblioteca_demo.example:
+#        class: %biblioteca_demo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

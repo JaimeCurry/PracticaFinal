@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Bibliotecas</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        
+
+        .modificar {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .eliminar {
+            background-color: #dc3545;
+            color: white;
+            margin-left: 5px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    {% block body %}
+    <h1>Listado de bibliotecas</h1>
+    <a href="{{ path('annadirBiblioteca') }}" class="btn">Añadir Biblioteca</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Ciudad</th>
+                <th>Horario de Apertura</th>
+                <th>Horario de Cierre</th>
+                <th>Fecha de Fundación</th>
+                <th>Normas</th>
+                <th>Acciones</th> 
+            </tr>
+        </thead>
+        <tbody>
+            {% for biblioteca in bibliotecas %}
+                <tr>
+                    <td>{{ biblioteca.nombre }}</td>
+                    <td>{{ biblioteca.direccion }}</td>
+                    <td>{{ biblioteca.ciudad }}</td>
+                    <td>{{ biblioteca.horarioApertura|date('H:i') }}</td>
+                    <td>{{ biblioteca.horarioCierre|date('H:i') }}</td>
+                    <td>{{ biblioteca.fechaFundacion|date('d-m-Y') }}</td>
+                    <td>{{ biblioteca.normas }}</td>
+                    <td>
+                        <a href="{{ path('editarBiblioteca', { 'id': biblioteca.id }) }}" class="modificar">Modificar</a>
+                        <a href="{{ path('eliminarBiblioteca', { 'id': biblioteca.id }) }}" class="eliminar">Eliminar</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endblock %}
+</body>
+</html>
+
+

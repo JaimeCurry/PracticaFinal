@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Título de la Página</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    {% block body %}
+    <h1>Listado de libros</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Sinopsis</th>
+                <th>Fecha de Publicación</th>
+                <th>Editorial</th>
+                <th>ISBN</th>
+                <th>Ejemplares</th>
+                <th>Biblioteca</th>
+                <th>Dirección</th>
+                <th>Ciudad</th>
+                <th>Horario de Apertura</th>
+                <th>Horario de Cierre</th>
+                <th>Fecha de Fundación</th>
+                <th>Normas</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for libro in libros %}
+                <tr>
+                    <td>{{ libro.titulo }}</td>
+                    <td>{{ libro.autor }}</td>
+                    <td>{{ libro.sinopsis }}</td>
+                    <td>{{ libro.fechaPublicacion|date('d-m-Y') }}</td>
+                    <td>{{ libro.editorial }}</td>
+                    <td>{{ libro.isbn }}</td>
+                    <td>{{ libro.ejemplares }}</td>
+                    <td>{{ libro.biblioteca.nombre }}</td>
+                    <td>{{ libro.biblioteca.direccion }}</td>
+                    <td>{{ libro.biblioteca.ciudad }}</td>
+                    <td>{{ libro.biblioteca.horarioApertura|date('H:i') }}</td>
+                    <td>{{ libro.biblioteca.horarioCierre|date('H:i') }}</td>
+                    <td>{{ libro.biblioteca.fechaFundacion|date('d-m-Y') }}</td>
+                    <td>{{ libro.biblioteca.normas }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endblock %}
+</body>
+</html>

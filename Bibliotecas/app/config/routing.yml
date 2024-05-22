@@ -1,0 +1,4 @@
+biblioteca_demo:
+    resource: "@BibliotecaDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+

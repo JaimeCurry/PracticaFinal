@@ -1,0 +1,61 @@
+listarBibliotecas:
+    pattern:  /listarBibliotecas
+    defaults: { _controller: BibliotecaDemoBundle:Bibliotecas:listarBibliotecas}
+ 
+buscarBibliotecaNombre:
+    pattern:  /buscarBibliotecaNombre/{nombre}
+    defaults: { _controller: BibliotecaDemoBundle:Bibliotecas:buscarBibliotecaNombre}
+    
+buscarBibliotecasCiudad:
+    pattern:  /buscarBibliotecasCiudad/{ciudad}
+    defaults: { _controller: BibliotecaDemoBundle:Bibliotecas:buscarBibliotecasCiudad}
+    
+    
+listarLibrosBiblioteca:
+    pattern:  /listarLibrosBiblioteca/{idBiblioteca}
+    defaults: { _controller: BibliotecaDemoBundle:Libros:listarLibrosBiblioteca}
+    
+librosTituloBiblioteca:
+    pattern:  /librosTituloBiblioteca/{idBiblioteca}/{titulo}
+    defaults: { _controller: BibliotecaDemoBundle:Libros:librosTituloBiblioteca}
+    
+librosAutorBiblioteca:
+    pattern:  /librosAutorBiblioteca/{idBiblioteca}/{autor}
+    defaults: { _controller: BibliotecaDemoBundle:Libros:librosAutorBiblioteca}    
+    
+librosEditorialBiblioteca:
+    pattern:  /librosEditorialBiblioteca/{idBiblioteca}/{editorial}
+    defaults: { _controller: BibliotecaDemoBundle:Libros:librosEditorialBiblioteca}
+    
+buscarLibroTitulo:
+    pattern:  /buscarLibroTitulo/{titulo}
+    defaults: { _controller: BibliotecaDemoBundle:Libros:buscarLibroTitulo}      
+    
+buscarLibroTituloDisponibilidad:
+    pattern:  /buscarLibroTituloDisponibilidad/{titulo}
+    defaults: { _controller: BibliotecaDemoBundle:Libros:buscarLibroTituloDisponibilidad}      
+    
+annadirBiblioteca:
+    pattern: /annadirBiblioteca
+    defaults: { _controller: BibliotecaDemoBundle:Bibliotecas:annadirBiblioteca}
+    
+eliminarBiblioteca:
+    pattern: /eliminarBiblioteca/{id}
+    defaults: { _controller: BibliotecaDemoBundle:Bibliotecas:eliminarBiblioteca}
+    
+editarBiblioteca:
+    pattern: /editarBiblioteca/{id}
+    defaults: { _controller: BibliotecaDemoBundle:Bibliotecas:editarBiblioteca}
+    
+annadirLibro:
+    pattern: /annadirLibro
+    defaults: { _controller: BibliotecaDemoBundle:Libros:annadirLibro }
+    
+eliminarLibro:
+    pattern: /eliminarLibro/{id}
+    defaults: { _controller: BibliotecaDemoBundle:Libros:eliminarLibro }
+    
+modificarLibro:
+    pattern: /modificarLibro/{id}
+    defaults: { _controller: BibliotecaDemoBundle:Libros:modificarLibro }
+

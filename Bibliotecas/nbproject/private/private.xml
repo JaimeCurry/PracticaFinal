@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Resources/views/Default/modificarLibro.html.twig</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Resources/views/Default/annadirLibro.html.twig</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Entity/LibroRepository.php</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Form/LibroType.php</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Resources/views/Default/annadirBiblioteca.html.twig</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Entity/Libro.php</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Entity/Biblioteca.php</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Resources/views/Default/buscarLibroTitulo.html.twig</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Entity/BibliotecaRepository.php</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Resources/views/Default/editarBiblioteca.html.twig</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Controller/BibliotecasController.php</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Controller/LibrosController.php</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Resources/views/Default/listarLibros.html.twig</file>
+            <file>file:/C:/xampp/htdocs/Bibliotecas/src/Biblioteca/DemoBundle/Form/BibliotecaType.php</file>
+        </group>
+    </open-files>
+</project-private>
